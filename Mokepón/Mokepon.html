@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Moképon!</title>
+    <script src="./JavaScript/Mokepon.js"></script>
+    <link rel="stylesheet" href="./Mokepon.css">
+</head>
+    <body>
+        <section id="seleccionar-mascota">
+            <h1 id="titulo">Moképon!</h1>
+            <h2 class="subtitulo">Elige a tu mascota:</h2>
+        
+            <div class="tarjetas">
+                    <input type="radio" name="mascota" id="Hipodoge" />
+                    <label class="tarjeta-de-mokepon" for="Hipodoge">
+                        <p>Hipodoge</p>
+                        <img src="./Assets/Hipodoge.png" alt="Hipodoge">
+                    </label>
+                
+                    <input type="radio" name="mascota" id="Capipepo" />
+                    <label class="tarjeta-de-mokepon" for="Capipepo">
+                        <p>Capipepo</p>
+                        <img src="./Assets/Capipepo.png" alt="Capipepo" />
+                    </label>
+                
+                    <input type="radio" name="mascota" id="Ratigueya" />
+                    <label class="tarjeta-de-mokepon" for="Ratigueya">
+                        <p>Ratigueya</p>
+                        <img src="./Assets/Ratigueya.png" alt="Ratigueya">
+                    </label>
+                
+                    <input type="radio" name="mascota" id="Langostelvis" />
+                    <label class="tarjeta-de-mokepon" for="Langostelvis">
+                        <p>Langostelvis</p>
+                        <img src="./Assets/Langostelvis.png" alt="Langostelvis">
+                    </label>
+
+                    <input type="radio" name="mascota" id="Tucapalma" />
+                    <label class="tarjeta-de-mokepon" for="Tucapalma">
+                        <p>Tucapalma</p>
+                        <img src="./Assets/Tucapalma.png" alt="Tucapalma">
+                    </label>
+
+                    <input type="radio" name="mascota" id="Pydos" />
+                    <label class="tarjeta-de-mokepon" for="Pydos">
+                        <p>Pydos</p>
+                        <img src="./Assets/Pydos.png" alt="Pydos">
+                    </label>
+            </div>
+        
+            <button id="boton-mascota">Seleccionar</button>
+        </section>    
+
+        <section id="seleccionar-ataque">
+            <h1 id="titulo">Moképon!</h1>
+
+            <h2 class="subtitulo">Elige a tu ataque:</h2>
+
+            <div class="tarjetas-ataques">
+                <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
+                <button id="boton-agua" class="boton-de-ataque">Agua 💧</button>
+                <button id="boton-tierra" class="boton-de-ataque">Tierra 🌱</button>
+            </div>
+
+            <div id="mensajes">
+                <p id="resultado">¡Mucha Suerte!</p>
+
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">3</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataque-del-jugador"></div>
+                </div>
+                <div class="ataques-enemigo">
+                    <p id="vidas-enemigo">3</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
